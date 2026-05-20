@@ -1,4 +1,4 @@
-# 📥 [Télécharger la dernière version stable (.zip)](https://github.com/hugo-rossel/selligent-extender/releases/latest)
+# 📥 [Télécharger la dernière version](https://github.com/hugo-rossel/selligent-extender/releases/latest)
 
 ---
 

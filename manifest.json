@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Selligent EXTender",
-  "version": "1.5",
+  "version": "1.6",
   "description": "A fresh take on Selligent UI",
   "permissions": [
     "activeTab",
