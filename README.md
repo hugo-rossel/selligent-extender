@@ -1,3 +1,7 @@
+# 📥 [Télécharger la dernière version stable (.zip)](https://github.com/hugo-rossel/selligent-extender/releases/latest)
+
+---
+
 # 🚀 Selligent EXTender (Production)
 
 **Selligent EXTender** est une extension Chrome interne développée pour enrichir l'expérience utilisateur et simplifier l'utilisation quotidienne de la plateforme Selligent. 

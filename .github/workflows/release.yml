@@ -32,6 +32,6 @@ jobs:
             ### Comment installer ou mettre à jour :
             1. Téléchargez le fichier **`selligent-extender.zip`** ci-dessous.
             2. Extrayez le contenu de l'archive dans votre dossier de travail permanent sur votre ordinateur (ex : `C:\SelligentExtender`).
-            3. Référez-vous au fichier **`README.md`** à l'accueil du dépôt pour les instructions détaillées pas-à-pas.
+            3. Référez-vous au guide de mise à jour sur la **[page d'accueil du dépôt GitHub](https://github.com/hugo-rossel/selligent-extender)** pour les instructions pas-à-pas détaillées.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,5 +1,5 @@
 const GITHUB_REPO = "hugo-rossel/selligent-extender";
-const CHECK_INTERVAL = 5 * 60 * 1000; // 5 minutes en millisecondes (pour tests)
+const CHECK_INTERVAL = 12 * 60 * 60 * 1000; // 12 heures en millisecondes
 
 // Vérifie si une mise à jour est disponible sur GitHub
 async function checkForUpdates() {
