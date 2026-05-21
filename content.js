@@ -603,15 +603,19 @@
         if (typeof chrome === "undefined" || !chrome.storage) return;
 
         try {
-            const data = await chrome.storage.local.get(['latestVersion', 'downloadUrl', 'dismissedVersion']);
+            const data = await chrome.storage.local.get(['latestVersion', 'downloadUrl', 'dismissedTime']);
             const currentVersion = chrome.runtime.getManifest().version;
             
             if (!data.latestVersion) return;
 
             // Si la version distante est strictement supérieure à la version actuelle
             if (isVersionGreater(data.latestVersion, currentVersion)) {
-                // Et si l'utilisateur n'a pas déjà ignoré cette version spécifique
-                if (data.dismissedVersion !== data.latestVersion) {
+                // Et si l'utilisateur n'a pas déjà ignoré l'alerte depuis moins de 24h
+                const now = Date.now();
+                const dismissedTime = data.dismissedTime || 0;
+                const oneDay = 24 * 60 * 60 * 1000;
+
+                if (now - dismissedTime > oneDay) {
                     showUpdateBanner(data.latestVersion, data.downloadUrl);
                 }
             }
@@ -663,7 +667,7 @@
 
         document.getElementById('se-update-btn-ignore').onclick = async () => {
             if (typeof chrome !== "undefined" && chrome.storage) {
-                await chrome.storage.local.set({ dismissedVersion: newVersion });
+                await chrome.storage.local.set({ dismissedTime: Date.now() });
             }
             banner.classList.add('se-update-banner-out');
             setTimeout(() => banner.remove(), 400);

@@ -16,13 +16,13 @@ jobs:
 
       - name: Package Extension (Prod Only)
         run: |
-          zip -r selligent-extender.zip ./* -x "README.md" -x ".git*" -x ".github*"
+          zip -r amp-r.zip ./* -x "README.md" -x ".git*" -x ".github*"
 
       - name: Create GitHub Release
         id: create_release
         uses: softprops/action-gh-release@v2
         with:
-          files: selligent-extender.zip
+          files: amp-r.zip
           draft: false
           prerelease: false
           name: ÅMP-r ${{ github.ref_name }}
@@ -34,7 +34,7 @@ jobs:
             👉 **[https://github.com/hugo-rossel/amp-r](https://github.com/hugo-rossel/amp-r)**
             
             ### 🔄 Comment mettre à jour :
-            1. Téléchargez le fichier **`selligent-extender.zip`** ci-dessous.
+            1. Téléchargez le fichier **`amp-r.zip`** ci-dessous.
             2. Extrayez son contenu et remplacez les fichiers existants dans votre dossier d'installation permanent (ex : `C:\AMP-r`).
             3. Ouvrez **`chrome://extensions/`** dans Chrome et cliquez sur l'icône **Actualiser 🔄** sur la carte de l'extension *ÅMP-r*.
         env:

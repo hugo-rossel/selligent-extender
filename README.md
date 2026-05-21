@@ -4,7 +4,7 @@
 
 # 🚀 ÅMP-r (Ampli Rossel)
 
-**ÅMP-r** (anciennement *Selligent EXTender*) est une extension Chrome interne de pointe développée pour enrichir l'expérience utilisateur, fluidifier les diagnostics et simplifier l'utilisation quotidienne des plateformes internes et des sites média du groupe Rossel.
+**ÅMP-r** est une extension Chrome interne de pointe développée pour enrichir l'expérience utilisateur, fluidifier les diagnostics et simplifier l'utilisation quotidienne des plateformes internes et des sites média du groupe Rossel.
 
 Elle dispose d'un panneau d'options moderne vous permettant d'**activer ou de désactiver chaque fonctionnalité individuellement** selon vos besoins.
 
@@ -48,7 +48,7 @@ Pour installer l'extension sur Google Chrome :
 
 1. **Télécharger l'extension** :
    - Rendez-vous sur la page des **[Releases GitHub](https://github.com/hugo-rossel/amp-r/releases)**.
-   - Téléchargez l'archive compressée **`selligent-extender.zip`** (le package officiel) de la dernière version stable.
+   - Téléchargez l'archive compressée **`amp-r.zip`** (le package officiel) de la dernière version stable.
 2. **Extraire l'archive** :
    - Extrayez le contenu de l'archive dans un dossier permanent et sécurisé de votre disque dur (ex : `C:\AMP-r`).
    - **⚠️ Important** : Ne supprimez pas ce dossier après installation, Chrome s'y réfère continuellement.
@@ -66,6 +66,6 @@ Pour installer l'extension sur Google Chrome :
 Lorsqu'une mise à jour de l'extension est disponible, un élégant bandeau d'alerte s'affiche automatiquement en bas à droite de votre écran sur Selligent. 
 
 1. Cliquez sur **Mettre à jour** dans le bandeau (cela ouvrira la page des Releases sur GitHub).
-2. Téléchargez le nouveau fichier **`selligent-extender.zip`**.
+2. Téléchargez le nouveau fichier **`amp-r.zip`**.
 3. Extrayez-le et remplacez les fichiers existants dans votre dossier d'installation permanent (ex : `C:\AMP-r`).
 4. Accédez à **`chrome://extensions/`** et cliquez sur le bouton **Actualiser 🔄** sur la carte de l'extension *ÅMP-r*.
